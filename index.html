@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snak Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header (will be same across all pages) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="data:image/jpeg;base64,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" alt="Snak Restaurant Logo" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dynamic Content Area -->
+    <main id="content">
+        <!-- Home Page Content -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 id="dynamic-greeting">Welcome to Snak Restaurant!</h1>
+                    <p>Discover a culinary journey that delights your senses.</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Carousel -->
+                    <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://graphicsfamily.com/wp-content/uploads/edd/2023/02/Restaurant-Logo-Design-2-scaled.jpg" class="d-block w-100" alt="Restaurant Interior">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.etsystatic.com/17012360/r/il/103a29/3771782113/il_fullxfull.3771782113_aev1.jpg" class="d-block w-100" alt="Restaurant Dining">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://img.freepik.com/premium-photo/process-cooking-order-kitchen-fast-food-restaurant_77190-20135.jpg" class="d-block w-100" alt="Restaurant Kitchen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (will be same across all pages) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Phone:07 8528 3934> Email:Fastfoodrestaurant@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Location</h5>
+                    <p>123 Flavor Street<br>Amman City</p>
+                </div>
+                <div class="col-md-4">
+                    <p>&copy; 2024 Snak Restaurant. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
