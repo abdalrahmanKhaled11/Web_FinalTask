@@ -1,0 +1,61 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.navbar {
+    background-color: #0d0d0d !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Carousel Styles */
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Dynamic Greeting */
+#dynamic-greeting {
+    transition: color 0.5s ease;
+}
+
+/* Menu Card Styles */
+.menu-card {
+    transition: transform 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card .price {
+    transition: font-size 0.3s ease;
+}
+
+.menu-card:hover .price {
+    font-size: 1.2em;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #323334;
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 250px;
+    }
+}
